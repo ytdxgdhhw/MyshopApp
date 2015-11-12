@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">模仿品</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_html">HtmlActivity</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_subject">SubjectActivity</string>
+
+    <color name="color_selected">#FF0000</color>
+    <color name="color_normal">#999999</color>
+
+</resources>

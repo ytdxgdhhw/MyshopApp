@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+
+    >
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-20dp"
+            android:onClick="doEsc"
+            android:padding="10dp"
+            android:src="@drawable/public_nav_liftbtn_normal" />
+
+        <TextView
+            android:id="@+id/tvTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.myshopapp.TypeOneActivity">
+
+
+
+            <com.myshopapp.hhw.entity.GridViewForScrollView
+                android:id="@+id/gvPinpai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:background="@android:color/transparent"
+                android:numColumns="3"
+                android:text="@string/hello_world" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
+
+

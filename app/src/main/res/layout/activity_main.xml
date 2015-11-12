@@ -1,0 +1,54 @@
+<com.myshopapp.lxc.util.FragmentTabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost"
+
+    >
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/realContact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_above="@+id/line">
+
+        </FrameLayout>
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#999999"
+            android:layout_above="@android:id/tabs"
+            />
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/bg_w"
+            android:showDividers="none"
+
+
+            >
+
+        </TabWidget>
+
+    </RelativeLayout>
+
+</com.myshopapp.lxc.util.FragmentTabHost>

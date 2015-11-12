@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:padding="1dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/ItemImageView"
+        android:background="@drawable/shape_product"
+        />
+
+    <TextView   android:id="@+id/ItemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="男子篮球鞋"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="#000"
+        android:layout_below="@+id/ItemImageView"
+        android:layout_alignLeft="@+id/ItemImageView"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="现价"
+        android:textSize="16sp"
+        android:textColor="#f00"
+        android:layout_below="@+id/ItemTextView"
+        android:layout_alignLeft="@+id/ItemTextView"
+        android:layout_marginTop="10dp"
+        android:id="@+id/RightPrice"
+        />
+    <TextView   android:id="@+id/OldPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原价"
+        android:textColor="#777"
+        android:layout_alignBottom="@+id/RightPrice"
+        android:layout_toRightOf="@+id/RightPrice"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>
